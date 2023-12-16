@@ -5,34 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FizzBuzz</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+   
   </style>
 </head>
 <body>
 
 <script>
   // FizzBuzz logic
-  function fizzBuzz() {
-    var output = '';
-    for (var i = 1; i <= 20; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        output += 'FizzBuzz\n';
-      } else if (i % 3 === 0) {
-        output += 'Fizz\n';
-      } else if (i % 5 === 0) {
-        output += 'Buzz\n';
-      } else {
-        output += i + '\n';
-      }
+  // function fizzBuzz() {
+  //   var output = '';
+  //   for (var i = 1; i <= 20; i++) {
+  //     if (i % 3 === 0 && i % 5 === 0) {
+  //       output += 'FizzBuzz\n';
+  //     } else if (i % 3 === 0) {
+  //       output += 'Fizz\n';
+  //     } else if (i % 5 === 0) {
+  //       output += 'Buzz\n';
+  //     } else {
+  //       output += i + '\n';
+  //     }
+  //   }
+  //   return output;
+  // }
+
+	function fizzBuzz() {
+  var output = '';
+  for(var i = 1;i <= 20;i++) {
+    if( i % 3 === 0 ){
+      output += 'Fizz\n';
+    }else if( i % 5 === 0) {
+      output += 'Buzz\n';
+    }else{
+      output += 'FizzBuzz\n';
     }
-    return output;
   }
+  return output;
+}
 
   // Display the result using an alert
-  alert(fizzBuzz());
+  // alert(fizzBuzz());
 </script>
 
 </body>
